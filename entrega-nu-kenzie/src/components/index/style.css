@@ -2,6 +2,16 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
 
 .div-father {
     display: flex;
@@ -42,6 +52,7 @@
     background-color: #FD377E;
     color: #FFFFFF;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .div-two {

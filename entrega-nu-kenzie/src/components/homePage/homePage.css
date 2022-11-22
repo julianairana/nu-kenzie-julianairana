@@ -285,3 +285,34 @@ h2 {
   margin-right: 10px;
   cursor: pointer;
 }
+
+@media (max-width: 900px) {
+  .div-main {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .div-all {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .div-launch {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .div-button {
+    width: 80%;
+  }
+}

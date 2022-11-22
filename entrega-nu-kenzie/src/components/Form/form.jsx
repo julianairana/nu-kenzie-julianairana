@@ -6,8 +6,6 @@ export const Form = ({ setValues }) => {
   const [valueForm, setValueForm] = useState("");
   const [typeValue, setTypeValue] = useState("");
 
-  console.log(description, valueForm, typeValue);
-
   function handleSubmit(event) {
     event.preventDefault();
 

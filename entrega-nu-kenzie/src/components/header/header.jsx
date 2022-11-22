@@ -6,7 +6,7 @@ export const Header = ({setState}) => {
   return (
     <div className="div-header">
       <img src={imgLogoHeader} alt="logo Nu Kenzie" />
-      <button onClick={() => setState(false)} >Inicio</button>
+      <button onClick={() => setState(false)}>Inicio</button>
     </div>
   );
 };

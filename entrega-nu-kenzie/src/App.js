@@ -1,5 +1,5 @@
 import "./App.css";
-import { Index } from './components/index';
+import { Index } from './components/Index';
 import { HomeNoCard } from "./components/HomePage/homePage";
 import { useState } from "react";
 import React from "react";

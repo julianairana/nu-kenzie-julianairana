@@ -21,7 +21,7 @@ export const HomeNoCard = ({ setState }) => {
 
   function deletCards(cardDelet) {
     const delet = values.filter((element)=>
-      element.description !== cardDelet)
+      element !== cardDelet)
       setValues(delet)
   }
 
@@ -71,7 +71,7 @@ export const HomeNoCard = ({ setState }) => {
             </button>
           </div>
 
-          {values.length === 0 && (
+          {dataFilter.length === 0 && (
             <div>
               <h2>Você ainda não possui nenhum lançamento</h2>
               <img className="img-noCard" src={noCard} alt="" />
@@ -82,7 +82,7 @@ export const HomeNoCard = ({ setState }) => {
 
           <ul className="ulList">
             {dataFilter.map((element, index) => (
-              <ListRender index={index} element={element} key={index} deletCards = {()=> deletCards(element.description)} />
+              <ListRender index={index} element={element} key={index} deletCards = {()=> deletCards(element)} />
             ))}
           </ul>
         </div>

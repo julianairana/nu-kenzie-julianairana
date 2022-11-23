@@ -31,7 +31,7 @@ export const Form = ({ setValues }) => {
           onChange={(event) => setDescription(event.target.value)}
           id="description"
           value={description}
-          placeholder="Digite aqui sua descrição"
+          placeholder="Digite aqui sua descrição" required
         />
         <span className="span-ex">Ex: Compra de roupas</span>
         <div className="div-value">
@@ -42,7 +42,7 @@ export const Form = ({ setValues }) => {
               onChange={(event) => setValueForm(event.target.value)}
               id="valueForm"
               value={valueForm}
-              placeholder="R$"
+              placeholder="R$" required
             />
           </div>
           <div className="div-span-value">
@@ -51,7 +51,7 @@ export const Form = ({ setValues }) => {
               name="typeValue"
               id="typeValue"
               onChange={(event) => setTypeValue(event.target.value)}
-              value={typeValue}
+              value={typeValue} required
             >
               <option value=""></option>
               <option value="Entrada">Entrada</option>
